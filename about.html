@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us | Bill's Wholesale Beans</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer>
+        contactForm = Document.getElementByID("contactForm");
+        contactForm.addEventListener("submit",success);
+
+        function success(submit) {
+            //fill empty p element 
+            Document.getElementByID("submit_success").innerHTML = "Form submitted";
+        }
+    </script>
+</head>
+<body>
+    <nav id="top_nav">
+        <ul>
+            <li><a href="index.html" title="Return to home page">Home</a></li>
+            <li> | </li>
+            <li><a href="catalog.html" title="Full product catalog">Catalog</a></li>
+            <li><a href="sales.html" title="Current sales">Sales</a></li>
+            <li class="current"><a href="about.html" title="About us and contact information">About</a></li>
+            <li> | </li>
+       		<li><a href="register.html" title="Register">Register</a></li>
+        </ul>
+    </nav>
+    <h1>Bill's Wholesale Beans</h1>
+    <img id="right_img" src="istockphoto_dry_beans_banner.jpg" alt="various beans">
+    <h2>About Us</h2>
+    <p>At Bill's, we're passionate about sourcing fresh, low priced beans for small businesses and discerning home cooks. Please contact us if your beans do not match your order or if they are not the quality you expected.</p>
+    <p>Each order must be a minimum of 1kg. 1oz samples can be sent upon request.</p>
+    <h2>Contact Us</h2>
+    <div id="contact">
+        <form id="contactForm" name="contact" method="post" autocomplete="on">
+        <!-- action="contact.js" onsubmit="return success()" -->
+            <label for="fName">Name: </label>
+            <br>
+            <input type="text" name="fName" id="fName" required>
+            <br>
+            <label for="fEmail">Email:</label>
+            <br>
+            <input type="email" name="fEmail" id="fEmail" required>
+            <br>
+            <label for="fTel">Telephone: </label>
+            <br>
+            <input type="tel" name="fTel" id="fTel" placeholder="(999)9999999" pattern="^(\(\d{3}\)|\d{3})-?\d{3}-?\d{4}$">
+            <br>
+            <textarea rows="8" cols="40">
+            </textarea>
+            <br>
+            <input type="submit" value="Send">
+            <p id="submit_success"></p>
+        </form>
+    </div>
+    <footer>
+        Copyright &copy;2020 Bill's Wholesale Beans <br>
+        1111 Main St <br>
+        Houston, TX 77000
+    </footer>
+</body>
+</html>

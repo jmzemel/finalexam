@@ -1,0 +1,90 @@
+/*
+    Base style for all pages
+*/
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #CFD8DC;
+}
+footer {
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+img#right_img {
+    float: right;
+    max-width: 40rem;
+}
+nav#top_nav {
+    background-color: #37474F;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    color: white;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    padding: 4px;
+}
+nav a:link {
+    color: lightblue;
+}
+nav a:visited {
+    color: lightsalmon;
+}
+nav a:hover {
+    font-weight: bold;
+}
+li.current {
+    background-color: darkblue;
+    color: white;
+}
+li.current a:link {
+    color: white;
+}
+li.current a:visited {
+    color: white;
+}
+li.current a:hover {
+    font-weight: normal;
+}
+h1 {
+    
+}
+input {
+    margin: 4px;
+}
+div#main {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.productGrid {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+/*
+.grid_1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+*/
+form#contactForm {
+    padding-left: 5px;
+}
+/*
+input:invalid {
+    border: 2px solid red;
+}
+*/

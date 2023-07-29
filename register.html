@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>Register | Bill's Wholesale Beans</title>
+</head>
+<body>
+<nav id="top_nav">
+    <ul>
+        <li class="current"><a href="index.html" title="Return to home page">Home</a></li>
+        <li> | </li>
+        <li><a href="catalog.html" title="Full product catalog">Catalog</a></li>
+        <li><a href="sales.html" title="Current sales">Sales</a></li>
+        <li><a href="about.html" title="About us and contact information">About</a></li>
+        <li> | </li>
+        <li><a href="register.html" title="Register">Register</a></li>
+    </ul>
+</nav>
+<h1>Bill's Wholesale Beans</h1>
+<img id="right_img" src="dry-beans-stock.jpg" alt="various beans">
+<h2>Register an account</h2>
+<!--
+	Create a registration form that asks for name, email, phone #, and password 
+	and redisplays that info with a thank you message
+ -->
+<form id="registration" method="post" action="ControllerServlet">
+	<p>Required fields are followed by <strong>*</strong></p>
+	<label>Name: <strong>*</strong></label>
+	<input type="text" id="name" name="name" required>
+	<br>
+	<label>Password: <strong>*</strong></label>
+	<input type="password" id="pwd" name="pwd" required>
+	<br>
+	<label>E-mail: <strong>*</strong></label>
+	<input type="email" id="email" name="email" required>
+	<br>
+	<label>Phone number:</label>
+	<input type="tel" id="phone" name="phone">
+	<br>
+	<input type="submit" id="submit" value="Submit">
+</form>
+</body>
+</html>
